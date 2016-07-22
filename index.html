@@ -7,9 +7,9 @@
     el.style.height = (el.style.height === '200px') ? 400 : 200;
     var message = {'resize': 
                     {'iframe':'newsroom-blue',
-                     'height': document.clientHeight}
+                     'height': document.body.clientHeight}
                     };
-    console.log('message', message);
+    console.log('message', document.body.clientHeight);
     parent.postMessage(message, "*");
   };
   </script>
