@@ -1,17 +1,18 @@
 <html>
 <head>
-  <script>
+<!--   <script>
     setTimeout(function() {
       document.getElementById('slide-flute').style.height = '400';
     }, 2000);
   </script>
-</head>
+ --></head>
 <body>
   <h1>Test page</h1>
   <div id="slide-flute" 
        style="height: 200px;
               width: 200px;
-              background-color: blue;">
+              background-color: blue;"
+       onClick = "var el = document.getElementById('slide-flute'); el.style.height = (el.style.height === '200px') ? 400 : 200; console.log('hey');">
     <p>This is green box</p>
   </div>
 </body>
