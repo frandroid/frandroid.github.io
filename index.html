@@ -1,7 +1,8 @@
 <html>
 <head>
+  <meta charset="utf-8">
   <script>
-  const resize = () => {
+    resize = () => {
     var el = document.getElementById('slide-flute');
     el.style.height = (el.style.height === '200px') ? 400 : 200;
     var message = {'resize': 
@@ -9,7 +10,7 @@
                      'height': el.style.height}
                     };
     console.log('message', message);
-    parent.postMessage(message, *);
+    parent.postMessage(message, "*");
   };
   </script>
 </head>
