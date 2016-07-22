@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <script>
-    resize = () => {
+    var resize = function() {
       var el = document.getElementById('slide-flute');
       el.style.height = (el.style.height === '200px') ? 400 : 200;
       var message = {'resize': 
