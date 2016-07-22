@@ -1,18 +1,25 @@
 <html>
 <head>
-<!--   <script>
-    setTimeout(function() {
-      document.getElementById('slide-flute').style.height = '400';
-    }, 2000);
+  <script>
+  function resize() = {
+    var el = document.getElementById('slide-flute');
+    el.style.height = (el.style.height === '200px') ? 400 : 200;
+    var message = {'resize': 
+                    {'iframe':'newsroom-blue',
+                     'height': el.style.height}
+                    };
+    console.log('message', message);
+    parent.postMessage(message, *);
+  }
   </script>
- --></head>
+</head>
 <body>
   <h1>Test page</h1>
   <div id="slide-flute" 
        style="height: 200px;
               width: 200px;
               background-color: blue;"
-       onClick = "var el = document.getElementById('slide-flute'); el.style.height = (el.style.height === '200px') ? 400 : 200; console.log('hey');">
+       onClick = "resize()">
     <p>This is a green box</p>
   </div>
 </body>
