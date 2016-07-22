@@ -3,19 +3,17 @@
   <meta charset="utf-8">
   <script>
     resize = () => {
-    var el = document.getElementById('slide-flute');
-    el.style.height = (el.style.height === '200px') ? 400 : 200;
-    var message = {'resize': 
-                    {
-                      'iframe':'newsroom-blue',
-                      'height': document.getElementById('overall').offsetHeight + 20
-                    }
-                  };
-    console.table(message);
-    parent.postMessage(message, "*");
-    console.log(document)
-    console.log(parent)
-  };
+      var el = document.getElementById('slide-flute');
+      el.style.height = (el.style.height === '200px') ? 400 : 200;
+      var message = {'resize': 
+                      {
+                        'iframe':'newsroom-blue',
+                        'height': document.getElementById('overall').offsetHeight + 20
+                      }
+                    };
+      console.table(message);
+      parent.postMessage(message, "*");
+    };
   </script>
 </head>
 <body>
