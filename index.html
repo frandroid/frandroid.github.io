@@ -8,7 +8,7 @@
     var message = {'resize': 
                     {
                       'iframe':'newsroom-blue',
-                      'height': document.body.offsetHeight
+                      'height': document.getElementById('overall').offsetHeight
                     }
                   };
     console.table(message);
@@ -17,13 +17,15 @@
   </script>
 </head>
 <body>
-  <h1>Test page</h1>
-  <div id="slide-flute" 
-       style="height: 200px;
-              width: 200px;
-              background-color: blue;"
-       onClick = "resize()">
-    <p>This is a green box</p>
+  <div id="overall">
+    <h1>Test page</h1>
+    <div id="slide-flute" 
+         style="height: 200px;
+                width: 200px;
+                background-color: blue;"
+         onClick = "resize()">
+      <p>This is a green box</p>
+    </div>
   </div>
 </body>
 </html>
