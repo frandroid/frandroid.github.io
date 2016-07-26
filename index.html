@@ -11,8 +11,8 @@
                         'height': document.getElementById('overall').offsetHeight + 20
                       }
                     };
-      console.table(message);
-      top.postMessage(message, "https://misc.thestar.com");
+      console.log(message);
+      parent.postMessage(message, "https://misc.thestar.com");
     };
   </script>
 </head>
